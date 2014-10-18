@@ -1,6 +1,6 @@
 {
   "name": "breeze-mongoose",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BreezeJS server-side module that deals with mongoose models",
   "main": "./lib",
   "dependencies": {
