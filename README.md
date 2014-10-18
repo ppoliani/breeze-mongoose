@@ -14,17 +14,16 @@ Usage
             
            dbConnection = mongoose.createConnection(mongodb_connection_string),
             
-               modelContainer = function getModel(model){ // the name of the model
-                   return dbConnection .model(model);
-               },
+           modelContainer = function getModel(model){ // the name of the model
+             return dbConnection .model(model);
+           },
 
-               dbSchemas = dbConnection.models;
+           dbSchemas = dbConnection.models;
 
  2. Add the **getMetadata** endpoint to your API
         
 
         var breezeMongoose = require('breeze-mongoose')(modelContainer),
-
             app.get('breeze/metadata', function(req, res){
                  res.json(breezeMongoose.getMetadata(dbSchemas ));
             })
