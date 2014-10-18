@@ -2,7 +2,7 @@
   "name": "breeze-mongoose",
   "version": "1.0.0",
   "description": "BreezeJS server-side module that deals with mongoose models",
-  "main": "index.js",
+  "main": "./lib",
   "dependencies": {
     "bluebird": "^2.3.5",
     "i": "^0.3.2",
