@@ -23,10 +23,11 @@ Usage
  2. Add the **getMetadata** endpoint to your API
         
 
-        var breezeMongoose = require('breeze-mongoose')(modelContainer),
-            app.get('breeze/metadata', function(req, res){
-                 res.json(breezeMongoose.getMetadata(dbSchemas ));
-            })
+        var breezeMongoose = require('breeze-mongoose')(modelContainer);
+        
+        app.get('breeze/metadata', function(req, res){
+             res.json(breezeMongoose.getMetadata(dbSchemas ));
+        })
  3. Add the **saveChanges** endpoint
 
         app.post(function(req, res){
