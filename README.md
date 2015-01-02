@@ -44,3 +44,8 @@ Usage
                     res.send(500, message);
                 });
             });
+
+Example
+=======
+
+https://github.com/ppoliani/breeze-mongoose-example
